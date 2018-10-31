@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eating</title>
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/fontawesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/owlcarousel/assets/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/owlcarousel/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" type="image/png" href="images/favicon_eating.ico" />
+</head>
+<body>
+
+	<!-- *************** Main Slide *************** -->
+	<section>
+		<div class="container-fluid">
+			<div class="div-sign-in">
+				<p><a href="login.html">Login In</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="register.html">Sign Up</a></p>
+			</div>
+			<div class="div-main-slide">
+				<div class="background-img-slide-menu"></div>
+				<div class="div-dark-layer"></div>
+				<div class="main-slide-text">
+					<h1>Food Menu</h1>
+				</div>
+				<div class="div-menu-bar">
+					<div class="row">
+						<div class="col-md-5 div-menu-left">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="foodmenu.html">Food Menu</a></li>
+								<li><a href="#">Booking</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2 div-logo-center">
+							<img src="images/logo_eating1.png" class="logo-img"/>
+
+						</div>
+						<div class="col-md-5 div-menu-right">
+							<ul>
+								<li><a href="location.html">Location</a></li>
+								<li><a href="aboutus.html">About Us</a></li>
+								<li><a href="contactus.html">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- **************** Menu Info **************** --> 
+
+	<section>
+		<div class="container">
+			<div class="div-food-bar" id="italian-food">
+				<h3>Italian Food</h3>
+				<div class="row" id="food-row-1">
+					<div class="col food-bar-card" id="food-col-1">
+						<img src="images/ItalianFood_MozzarellaStuffedChickenParm.jpg" class="img-fluid">
+						<h5 id="food-name">Mozzarella-Stuffed Chicken Parm</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">22.4</span></h6>
+							</div>
+							<div class="col" id="food-count-1">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>	
+					<div class="col food-bar-card" id="food-col-2">
+						<img src="images/ItalianFood_CreamyTuscanChicken.jpg" class="img-fluid">
+						<h5 id="food-name">Creamy Tuscan Chicken</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">50</span></h6>
+							</div>
+							<div class="col" id="food-count-2">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>
+					<div class="col food-bar-card" id="food-col-3">
+						<img src="images/ItalianFood_CapreseSalmon.jpg" class="img-fluid">
+						<h5 id="food-name">Caprese Salmon</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">39</span></h6>
+							</div>
+							<div class="col" id="food-count-3">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>
+					<div class="col food-bar-card" id="food-col-4">
+						<img src="images/ItalianFood_Caprese Stuffed Chicken.jpg" class="img-fluid">
+						<h5 id="food-name">Caprese Stuffed Chicken</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">12.3</span></h6>
+							</div>
+							<div class="col" id="food-count-4">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row" id="food-row-2">
+					<div class="col food-bar-card" id="food-col-1">
+						<img src="images/ItalianFood_Baked Eggplant Parm.jpg" class="img-fluid">
+						<h5 id="food-name">Baked Eggplant Parm</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">20.2</span></h6>
+							</div>
+							<div class="col" id="food-count-5">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>	
+					<div class="col food-bar-card" id="food-col-2">
+						<img src="images/ItalianFood_Cheesy Italian Chicken.jpg" class="img-fluid">
+						<h5 id="food-name">Cheesy Italian Chicken</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">60</span></h6>
+							</div>
+							<div class="col" id="food-count-6">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>
+					<div class="col food-bar-card" id="food-col-3">
+						<img src="images/ItalianFood_Creamy Tuscan Sausage Pasta.jpg" class="img-fluid">
+						<h5 id="food-name">Creamy Tuscan Sausage Pasta</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">25</span></h6>
+							</div>
+							<div class="col" id="food-count-7">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>
+					<div class="col food-bar-card" id="food-col-4">
+						<img src="images/ItalianFood_Italian Chicken Skillet.jpg" class="img-fluid">
+						<h5 id="food-name">Italian Chicken Skillet</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">28</span></h6>
+							</div>
+							<div class="col" id="food-count-8">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row" id="food-row-3">
+					<div class="col food-bar-card" id="food-col-1">
+						<img src="images/ItalianFood_Chicken Florentine Pasta.jpg" class="img-fluid">
+						<h5 id="food-name">Chicken Florentine Pasta</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">30.2</span></h6>
+							</div>
+							<div class="col" id="food-count-9">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>	
+					<div class="col food-bar-card" id="food-col-2">
+						<img src="images/ItalianFood_No-Bun Bruschetta Burgers.jpg" class="img-fluid">
+						<h5 id="food-name">No-Bun Bruschetta Burgers</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">21.5</span></h6>
+							</div>
+							<div class="col" id="food-count-10">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>
+					<div class="col food-bar-card" id="food-col-3">
+						<img src="images/ItalianFood_Tuscan Spaghetti Squash.jpg" class="img-fluid">
+						<h5 id="food-name">Tuscan Spaghetti Squash</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">15</span></h6>
+							</div>
+							<div class="col" id="food-count-11">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>
+					<div class="col food-bar-card" id="food-col-4">
+						<img src="images/ItalianFood_Italian Sausage Stuffed Zucchini.jpg" class="img-fluid">
+						<h5 id="food-name">Italian Sausage Stuffed Zucchini</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">20.5</span></h6>
+							</div>
+							<div class="col" id="food-count-12">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="div-food-bar" id="german-food">
+				<h3>German Food</h3>
+				<div class="row" id="food-row-1">
+					<div class="col food-bar-card" id="food-col-1">
+						<img src="images/GermanFood_bratkartoffeln.jpg" class="img-fluid">
+						<h5 id="food-name">Bratkartoffeln</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">22.4</span></h6>
+							</div>
+							<div class="col" id="food-count-1">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>	
+					<div class="col food-bar-card" id="food-col-2">
+						<img src="images/GermanFood_currywurst.jpg" class="img-fluid">
+						<h5 id="food-name">Currywurst</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">50</span></h6>
+							</div>
+							<div class="col" id="food-count-2">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>
+					<div class="col food-bar-card" id="food-col-3">
+						<img src="images/GermanFood_Hendl.jpg" class="img-fluid">
+						<h5 id="food-name">Hendl</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">39</span></h6>
+							</div>
+							<div class="col" id="food-count-3">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>
+					<div class="col food-bar-card" id="food-col-4">
+						<img src="images/GermanFood_Sauerbraten.jpg" class="img-fluid">
+						<h5 id="food-name">Sauerbraten</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">12.3</span></h6>
+							</div>
+							<div class="col" id="food-count-4">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row" id="food-row-2">
+					<div class="col food-bar-card" id="food-col-1">
+						<img src="images/GermanFood_sauerkraut.jpg" class="img-fluid">
+						<h5 id="food-name">Sauerkraut</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">20.2</span></h6>
+							</div>
+							<div class="col" id="food-count-5">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>	
+					<div class="col food-bar-card" id="food-col-2">
+						<img src="images/GermanFood_LisenMitSpatzle.jpg" class="img-fluid">
+						<h5 id="food-name">Linsen mit Spatzle</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">60</span></h6>
+							</div>
+							<div class="col" id="food-count-6">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>
+					<div class="col food-bar-card" id="food-col-3">
+						<img src="images/GermanFood_fladlesuppe.jpg" class="img-fluid">
+						<h5 id="food-name">Fladlesuppe</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">25</span></h6>
+							</div>
+							<div class="col" id="food-count-7">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>
+					<div class="col food-bar-card" id="food-col-4">
+						<img src="images/GermanFood_Gaisburger Marsch.jpg" class="img-fluid">
+						<h5 id="food-name">Gaisburger Marsch</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">28</span></h6>
+							</div>
+							<div class="col" id="food-count-8">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row" id="food-row-3">
+					<div class="col food-bar-card" id="food-col-1">
+						<img src="images/German_pichelsteiner.jpg" class="img-fluid">
+						<h5 id="food-name">Pichelsteiner</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">30.2</span></h6>
+							</div>
+							<div class="col" id="food-count-9">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>	
+					<div class="col food-bar-card" id="food-col-2">
+						<img src="images/GermanFood_obatzda.jpg" class="img-fluid">
+						<h5 id="food-name">Obatzda</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">21.5</span></h6>
+							</div>
+							<div class="col" id="food-count-10">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>
+					<div class="col food-bar-card" id="food-col-3">
+						<img src="images/GermanFood_Tafelspitz.jpg" class="img-fluid">
+						<h5 id="food-name">Tafelspitz</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">15</span></h6>
+							</div>
+							<div class="col" id="food-count-11">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>
+					<div class="col food-bar-card" id="food-col-4">
+						<img src="images/GermanFood_Schlachtschussel.jpg" class="img-fluid">
+						<h5 id="food-name">Schlachtschussel</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">20.5</span></h6>
+							</div>
+							<div class="col" id="food-count-12">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="div-food-bar" id="french-food">
+				<h3>French Food</h3>
+				<div class="row" id="food-row-1">
+					<div class="col food-bar-card" id="food-col-1">
+						<img src="images/FranceFood_Basquaise Chicken.jpg" class="img-fluid">
+						<h5 id="food-name">Chicken Basquaise</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">30.4</span></h6>
+							</div>
+							<div class="col" id="food-count-1">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>	
+					<div class="col food-bar-card" id="food-col-2">
+						<img src="images/FranceFood_Vegetable-Barigoule.jpg" class="img-fluid">
+						<h5 id="food-name">Barigoule of Spring Vegetables</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">14</span></h6>
+							</div>
+							<div class="col" id="food-count-2">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>
+					<div class="col food-bar-card" id="food-col-3">
+						<img src="images/FranceFood_AlsatianBaconandOnionTart(Tarte Flambée).jpg" class="img-fluid">
+						<h5 id="food-name">Alsatian Bacon and Onion Tart (Tarte Flambée)</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">25.2</span></h6>
+							</div>
+							<div class="col" id="food-count-3">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>
+					<div class="col food-bar-card" id="food-col-4">
+						<img src="images/FranceFood_fried-hake-with-lemon-and-herb-butter-sauce.jpg" class="img-fluid">
+						<h5 id="food-name">Fried Hake with Lemon & Herb</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">35</span></h6>
+							</div>
+							<div class="col" id="food-count-4">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row" id="food-row-2">
+					<div class="col food-bar-card" id="food-col-1">
+						<img src="images/FranceFood_Cherry Gateau Basque.jpg" class="img-fluid">
+						<h5 id="food-name">Cherry Gateau Basque</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">18</span></h6>
+							</div>
+							<div class="col" id="food-count-5">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>	
+					<div class="col food-bar-card" id="food-col-2">
+						<img src="images/FranceFood_steak-diane-horz.jpg" class="img-fluid">
+						<h5 id="food-name">Steak Diane</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">32.5</span></h6>
+							</div>
+							<div class="col" id="food-count-6">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>
+					<div class="col food-bar-card" id="food-col-3">
+						<img src="images/FranceFood_pain-au-chocolat.jpg" class="img-fluid">
+						<h5 id="food-name">Pain au Chocolat</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">15</span></h6>
+							</div>
+							<div class="col" id="food-count-7">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>
+					<div class="col food-bar-card" id="food-col-4">
+						<img src="images/FranceFood_Seafood Soup with Ginger and Yuzu Kosho.jpg" class="img-fluid">
+						<h5 id="food-name">Seafood Soup Ginger & Yuzu Kosho</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">27</span></h6>
+							</div>
+							<div class="col" id="food-count-8">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row" id="food-row-3">
+					<div class="col food-bar-card" id="food-col-1">
+						<img src="images/FranceFood_Provencal Stuffed Squid.jpg" class="img-fluid">
+						<h5 id="food-name">Provençal Stuffed Squid</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">25.2</span></h6>
+							</div>
+							<div class="col" id="food-count-9">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>	
+					<div class="col food-bar-card" id="food-col-2">
+						<img src="images/FranceFood_smoked-salmon-rillettes.jpg" class="img-fluid">
+						<h5 id="food-name">Salmon Rillettes</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">22</span></h6>
+							</div>
+							<div class="col" id="food-count-10">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>
+					<div class="col food-bar-card" id="food-col-3">
+						<img src="images/FranceFood_lentil-salad-with-maple-pork.jpg" class="img-fluid">
+						<h5 id="food-name">Lentil Salad with Pork</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">45</span></h6>
+							</div>
+							<div class="col" id="food-count-11">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>
+					<div class="col food-bar-card" id="food-col-4">
+						<img src="images/FranceFood_LambNavarin.jpg" class="img-fluid">
+						<h5 id="food-name">Lamb Navarin</h5>
+						<div class="row">
+							<div class="col">
+								<h6>$ <span id="food-price">37.8</span></h6>
+							</div>
+							<div class="col" id="food-count-12">
+								<span class="button" id="button" onclick="minusCount(this)"><i class="fa fa-minus"></i></span> <span class="count" id="count">0</span> <span class="button" id="button" onclick="plusCount(this)"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- *************** Footer **************** -->
+
+		<section>
+			<div class="container-fluid">
+				<div class="div-footer-info">
+					<div class="bg-footer-info"></div>
+					<div class="div-dark-layer"></div>
+					<div class="footer-info-text">
+						<div class="container">
+							<div class="row">
+								<div class="col-5 footer-col-location">
+									<h5>Main Branch</h5>
+									<hr>
+									<ul>
+										<li class="li_location">No.(1), Main Street, Heaven Tsp, Yangon.</li>
+										<li class="li_phone">+95 988776655, +95 944332211</li>
+									</ul>
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d505.88555282111605!2d96.17079543133764!3d16.779710140570376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1ec8c65e603a3%3A0xeeb7242f36b24ed!2sYae+Kyaw+Market!5e0!3m2!1sen!2smm!4v1540272001669" class="location-map" frameborder="0" style="border:0" allowfullscreen></iframe>
+								</div>
+								<div class="col-4 footer-col-food-category">
+									<h5>Food as Country</h5>
+									<hr>
+									<ul>
+										<li><a href="#">Italian Food</a></li>
+										<li><a href="#">German Food</a></li>
+										<li><a href="#">French Food</a></li>
+									</ul>
+									<h5>Food as Eating Time</h5>
+									<hr>
+									<ul>
+										<li><a href="#">Breakfast Food</a></li>
+										<li><a href="#">Lunch Food</a></li>
+										<li><a href="#">Dinner Food</a></li>
+									</ul>
+								</div>
+								<div class="col-3 footer-col-follow-us">
+									<h5>Follow Us</h5>
+									<hr>
+									<p>&nbsp;<i class="fab fa-facebook-f"></i>&nbsp;&nbsp;&nbsp;&nbsp;Facebook</p>
+									<p><i class="fab fa-twitter"></i>&nbsp;&nbsp;&nbsp;Twitter</p>
+									<p><i class="fab fa-google-plus-g"></i>&nbsp;&nbsp;&nbsp;Google</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer-reserve-bar">
+						<p><i class="far fa-copyright"></i> 2018 All rights reserved by <a href="#">Felix Htoo</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- **************** Booking Pop-Up **************** -->
+
+		<section>
+			<div class="div-booking-button">
+			</div>
+			<div class="div-booking-form">
+				<div class="row">
+					<div class="col-6 offset-3">
+						<div class="div-booking-card">
+							<p id="close-button-id"><i class="fa fa-times" onclick="closePopup()"></i></p>
+							<h3>Booking</h3>
+							<form action="" method="post">
+								<div class="row">
+									<div class="col">
+										<div class="form-group form-customer">
+											<label id="customerid">Customer Name</label>
+											<input type="text" class="form-control" id="customerid">
+										</div>
+									</div>
+									<div class="col">
+										<div class="form-group form-phone">
+											<label id="phoneid">Phone Number</label>
+											<input type="textarea" class="form-control" id="phoneid">
+										</div>
+									</div>
+								</div>
+								<div class="form-group form-address">
+									<label id="addressid">Address</label>
+									<input type="textarea" class="form-control" id="addressid">
+								</div>
+							</form>
+							<div class="div-popup-table">
+								<table class="table" id="food-booking-table">
+								</table>
+							</div>
+							<input type="button" value="Book" class="btn-in-booking-card" onclick="closePopup()">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<script src="vendor/jquery_3.3.1/jquery-3.3.1.min.js"></script>
+		<script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+		<script type="text/javascript" src="js/custom.js"></script>
+	</body>
+	</html>

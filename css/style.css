@@ -1,0 +1,1099 @@
+/*===================================
+============= Font Face =============
+===================================*/
+
+@font-face {
+	font-family: Kalam;
+	src: url('../fonts/Kalam-Regular.ttf');
+}
+
+@font-face {
+	font-family: Courgette;
+	src: url('../fonts/Courgette-Regular.ttf');
+}
+
+@font-face {
+	font-family: Sriracha;
+	src: url('../fonts/Sriracha-Regular.ttf');
+}
+
+@font-face {
+	font-family: ArialRounded;
+	src: url('../fonts/ARLRDBD.TTF');
+}
+
+body{
+	background-color: #333;
+	/*scroll-behavior: smooth;*/
+}
+
+/*=============================
+=========== Bootstrap =========
+=============================*/
+
+.container-fluid{
+	padding:0px;
+}
+
+.row{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.col-md-5{
+	padding:0px;
+}
+
+.form-control{
+	color: #fff;
+	font-size: 1em;
+	font-family: Sriracha;
+	background-color:transparent;
+	border: 2px solid #fff;
+	border-radius: 5px;
+}
+
+.form-control:focus{
+	color: #fff;
+	background-color:transparent;
+	border-color: #fcfcfc;
+	box-shadow: 0 0 0 0.2rem #fafafa44;
+}
+
+
+
+/*==========================================
+=========== Login and Register Page =========
+===========================================*/
+
+.bg-in-login{
+	width: 100%;
+	height: 660px;
+	background-image: url('../images/bg_eating1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	filter: blur(3px);
+	position:absolute;
+	z-index: 1;
+}
+
+.bg-layer-in-login{
+	width: 100%;
+	height: 660px;
+	background-color: #00000077;
+	position: absolute;
+	z-index: 3;
+}
+
+.bg-in-register{
+	width:100%;
+	height: 780px;
+	background-image: url('../images/bg_eating3.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	filter: blur(1px);
+	position:absolute;
+	z-index: 1;
+}
+
+.bg-layer-in-register{
+	width:100%;
+	height: 780px;
+	background-color: #00000077;
+	position: absolute;
+	z-index: 3;
+}
+
+
+.text-layer-in-login, .text-layer-in-register{
+	position: relative;
+	z-index: 5;
+}
+
+.div-login, .div-register{
+	margin: 0px auto;
+}
+
+.logo-in-login, .logo-in-register{
+	width: 40%;
+	margin: 15% 35% 2% 35%;
+}
+
+.h2-in-login, .h2-in-register{
+	color: #fff;
+	font-family: Kalam;
+}
+
+label{
+	color: #fff;
+	font-size: 1.1em;
+	font-family: Sriracha;
+}
+
+.btn-in-login, 
+.btn-in-register{
+	width:90px;
+	height: 40px;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 1.15em;
+	font-family: Sriracha;
+	background-color: transparent;
+	margin: 5px auto;
+	transition-duration: 0.3s;
+}
+
+.btn-in-login:hover, .btn-in-register:hover{
+	background-color: #ffffff;
+	color: #000;
+}
+
+.p-in-login, .p-in-register{
+	color:#fff;
+	font-family: Sriracha;
+	text-align: center;
+	padding-top: 8px;
+}
+
+.a-in-login, .a-in-register{
+	
+}
+
+.div-register .row{
+	margin:0px;
+}
+
+.div-register .col{
+	padding-left:0px;
+}
+
+.div-register .lname-col{
+	padding-right:0px;
+}
+
+
+/*--------- Input Autofill --------*/
+
+@-webkit-keyframes autofill {
+	to{
+		background: transparent;
+	}
+}
+
+input:-webkit-autofill{
+	border-color: #fcfcfc;
+	-webkit-text-fill-color: #fff;
+	-webkit-animation-name: autofill;
+	-webkit-animation-fill-mode: both;
+}
+
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus{
+	border-color: #fcfcfc;
+	box-shadow: 0 0 0 0.2rem #fafafa44;
+}
+
+
+
+/*==============================
+======== Index Page ============
+==============================*/
+
+
+/*---------- Sign In/Sign Up ---------*/
+
+.div-sign-in{
+	position:fixed;
+	right:2%;
+	z-index: 15;
+	background-color: #333;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	padding: 5px 1%;
+	box-shadow: 3px 3px 3px #000;
+}
+
+.div-sign-in p{
+	color:#fff;
+	margin-bottom: 0px;
+}
+
+.div-sign-in a{
+	text-decoration:none;
+	font-family: Kalam;
+	color:#fff;
+}
+
+/*---------- Menu Bar --------*/
+
+.div-menu-bar{
+	width:100%;
+	height:70px;
+	padding-top: 60px;
+	background-color: #540B1700;
+	position: relative;
+	z-index: 10;
+}
+
+.div-menu-bar li{
+	float:left;
+	list-style: none;
+	padding: 10px 25px 10px 25px;
+	margin: 10px auto;
+}
+
+.div-menu-bar li a{
+	font-family: Kalam;
+	font-size: 20px;
+	text-shadow: 2px 2px 5px #000;
+	text-decoration: none;
+	color: #fff;
+
+}
+
+.div-menu-bar li:hover{
+	border: 1px solid #fff;
+	border-radius: 5px;
+	padding: 9px 25px 9px 25px;
+	transition-property: border, border-radius, padding;
+	transition-duration: 0.5s;
+}
+
+.div-menu-left ul{
+	
+	height: 71px;
+	margin:0px;
+	padding-left:20%;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	/*background-color: #00000066;*/
+}
+
+.div-menu-right ul{
+
+	height: 71px;
+	margin:0px;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	/*background-color: #00000066;*/
+}
+
+.div-logo-center .logo-img{
+	width:80%;
+	position:absolute;
+	left:10%;
+	top:-65%;
+}
+
+ /*.circle{
+ 	width:200px;
+ 	height:100px;
+ 	border-radius: 	50%;
+ 	background-color:#f00;
+ 	position: absolute;
+ 	left:-12%;
+ 	}*/
+
+ 	/*---------- Main Background Slide ----------*/
+
+ 	.div-main-slide{
+ 		width:100%;
+ 		height: 670px;
+ 	}
+
+ 	.div-main-slide .background-img-slide-home{
+ 		width:100%;
+ 		height:670px;
+ 		background-image: url('../images/bg_eating_home.jpg');
+ 		background-size: cover;
+ 		background-position: top;
+ 		background-attachment: fixed;
+ 		filter: blur(1px);
+ 		position: absolute;
+ 		z-index: 1;
+ 	}
+
+ 	.div-main-slide .background-img-slide-menu{
+ 		width:100%;
+ 		height:670px;
+ 		background-image: url('../images/bg_eating_menu.jpg');
+ 		background-size: cover;
+ 		background-position: top;
+ 		background-attachment: fixed;
+ 		filter: blur(1px);
+ 		position: absolute;
+ 		z-index: 1;
+ 	}
+
+ 	.div-main-slide .background-img-slide-location{
+ 		width:100%;
+ 		height:670px;
+ 		background-image: url('../images/bg_eating_location.jpg');
+ 		background-size: cover;
+ 		background-position: top;
+ 		background-attachment: fixed;
+ 		filter: blur(1px);
+ 		position: absolute;
+ 		z-index: 1;
+ 	}
+
+ 	.div-main-slide .background-img-slide-aboutus{
+ 		width:100%;
+ 		height:670px;
+ 		background-image: url('../images/bg_eating_aboutus.jpg');
+ 		background-size: cover;
+ 		background-position: top;
+ 		background-attachment: fixed;
+ 		filter: blur(1px);
+ 		position: absolute;
+ 		z-index: 1;	
+ 	}
+
+ 	.div-dark-layer{
+ 		width:100%;
+ 		height: inherit;
+ 		background-color: #00000066;
+ 		position: absolute;
+ 		z-index: 2;
+ 	}
+
+ 	.main-slide-text h1{
+ 		width:50%;
+ 		font-family: Sriracha;
+ 		font-size: 40px;
+ 		text-shadow: 3px 3px 5px #000;
+ 		text-align: center;
+ 		position:absolute;
+ 		top: 50%;
+ 		left: 23%;
+ 		z-index: 4;
+ 		color: #fff;
+ 	}
+
+
+ 	/*----------- Country Food Card ------------*/
+
+ 	.div-country-food{
+ 		height: auto;
+ 	}
+
+ 	.div-card{
+ 		height: 350px;
+ 		position:relative;
+ 		top:-15%;
+ 		z-index: 5;
+ 		box-shadow: 5px -5px 5px #000000aa;
+ 		overflow: hidden;
+ 		cursor:pointer;
+ 	}
+
+ 	.div-card img{
+ 		height: inherit;
+ 		object-position: center;
+ 		object-fit: cover;
+ 		position:absolute;
+ 		z-index: 5;
+ 		transition-duration: 0.5s;
+ 	}
+
+ 	.div-card .card-img-layer{
+ 		width: 100%;
+ 		height: inherit;
+ 		background-color: #00000066;
+ 		position: absolute;
+ 		z-index: 7;
+ 		transition-duration: 0.5s; 
+ 	}
+
+ 	.div-card span{
+ 		color: #fff;
+ 		border: 2px solid #fff;
+ 		border-radius: 4px;
+ 		padding: 2px 10px;
+ 		background-color: #00000033;
+ 		font-size: 30px;
+ 		font-family: Sriracha;
+ 		position: relative;
+ 		z-index: 9;
+ 		top: 45%;
+ 		left: 22%;
+ 		transition-duration: 0.5s;
+ 		user-select: none;
+ 	}
+
+
+ 	/*-------------- Today Special ------------*/
+
+ 	.owl-theme .owl-nav{
+ 		margin-top: 0px;
+ 	}
+
+ 	.owl-theme .owl-nav span {
+ 		color: #fff;
+ 		display:none;
+ 	}
+
+ 	.div-today-special h3{
+ 		color: #fff;
+ 		font-family: Sriracha;
+ 	}
+
+ 	.div-today-special .ts-card{
+ 		height: auto;
+ 		margin: 10px;
+ 		overflow:hidden;
+ 		box-shadow: 3px 3px 8px #000;
+ 		border-radius: 2px;
+ 	}
+
+ 	.div-today-special .ts-card img{
+ 		width: 100%;
+ 		height: 200px;
+ 	}
+
+ 	.div-today-special .ts-card h4{
+ 		color: #fff;
+ 		font-family: Kalam;
+ 		margin-top: 20px;
+ 	}
+
+ 	.div-today-special .ts-card h5{
+ 		color: #fff;
+ 		font-family: Kalam;
+ 		margin-top: 5px;
+ 	}
+
+
+ 	/*------------- Eating Time -------------*/
+
+ 	.div-eating-time{
+ 		margin-bottom: 50px;
+ 	}
+
+ 	.div-eating-time .col,
+ 	.div-eating-time .row{
+ 		padding:0px;
+ 		margin:0px;
+ 	}
+
+ 	.div-eating-time .col{
+ 		backgorund-image: url('../images/');
+ 		text-align:center;
+ 		border: 2px solid #fff;
+ 		border-top:0px;
+ 		border-bottom:0px;
+ 	}
+
+ 	.div-eating-time h3,
+ 	.div-eating-time p,
+ 	.div-eating-time h5{
+ 		text-align:center;
+ 		color: #fff;
+ 	}
+
+ 	.div-eating-time .head-eating-time{
+ 		padding: 25px 0px;
+ 	}
+
+ 	.div-eating-time .div-breakfast h3,
+ 	.div-eating-time .div-lunch h3,
+ 	.div-eating-time .div-dinner h3{
+ 		padding-top:25px;
+ 	}
+
+ 	.div-eating-time .div-breakfast{
+ 		border-left: 0px;
+ 		border-top: 0px;
+ 	}
+
+ 	.div-eating-time .div-dinner{
+ 		border-right: 0px;
+ 	}
+
+ 	.div-eating-time img{
+ 		height: 75px;
+ 	}
+
+ 	.div-eating-time .font-time{
+ 		font-family: Sriracha;
+ 	}
+
+
+ 	/*------------- Footer  ----------------*/
+
+ 	.div-footer-info{
+ 		height: 392px;
+ 		overflow:hidden;
+ 	}
+
+ 	.bg-footer-info{
+ 		width:100%;
+ 		height:inherit;
+ 		background-image: url('../images/bg_footer.jpg');
+ 		background-position: bottom;
+ 		background-size: cover;
+ 		background-attachment: fixed;
+ 		filter: blur(1px);
+ 		position:absolute;
+ 		z-index: 1;
+ 	}
+
+ 	.footer-info-text{
+ 		color:#fff;
+ 		font-family: Sriracha;
+ 		position:relative;
+ 		z-index:4;
+ 		padding-top: 15px;
+ 	}
+
+ 	.footer-info-text hr{
+ 		border-color: #fff;
+ 	}
+
+ 	.footer-info-text .footer-col-food-category ul,
+ 	.footer-info-text .footer-col-location ul{
+ 		padding-left: 25px;
+ 	}
+
+ 	.footer-col-food-category a{
+ 		color: #fff;
+ 	}
+
+ 	.footer-info-text .li_location{
+ 		list-style-image: url('../images/li_location.png');
+ 	}
+
+ 	.footer-info-text .li_phone{
+ 		list-style-image: url('../images/li_phone.png');
+ 	}
+
+ 	.location-map{
+ 		width: 75%;
+ 		height: 200px;
+ 		padding:5px 20px 20px 5px;
+ 	}
+
+ 	.footer-reserve-bar{
+ 		position:relative;
+ 		z-index: 15;
+ 		background-color: #333;
+ 	}
+
+ 	.footer-reserve-bar p{
+ 		color: #fff;
+ 		font-size: 13px;
+ 		text-align:center;
+ 		padding:10px;
+ 	}
+
+
+
+ /*===================================
+ ============ Food Menu Page =========
+ ===================================*/
+
+ /*---------- Menu Info ------------*/
+
+ .div-food-bar{
+ 	margin-top: 15px;
+ }
+
+ .div-food-bar h3,
+ .div-food-bar h5,
+ .div-food-bar h6
+ {
+ 	color: #fff;
+ 	font-family: Sriracha;
+ }
+
+ .div-food-bar h5{
+ 	height: 70px;
+ }
+
+ .food-bar-card{
+ 	margin: 15px 10px;
+ 	padding-left:0px;
+ 	padding-right:0px;
+ 	box-shadow: 4px 4px 5px #000;
+ }
+
+ .food-bar-card img{
+ 	width:100%;
+ 	height:150px;
+ 	object-position: center;
+ 	object-fit: cover;
+ }
+
+ .food-bar-card h5{
+ 	padding: 10px 7px 0px 7px;
+ }
+
+ .food-bar-card .row,
+ .food-bar-card .col{
+ 	margin:5px 0px;
+ 	padding:0px 5px;
+ }
+
+ div[id^="food-row"]{
+ 	margin:20px 0px;
+ }
+
+ .food-bar-card .count,
+ .food-bar-card .button{
+ 	color: #fff;
+ 	background-color: transparent;
+ 	border: 2px solid #fff;
+ 	border-radius: 3px;
+ 	padding:3px 7px;
+ 	font-weight: bold;
+ 	user-select: none;
+ }
+
+ .food-bar-card .button:hover{
+ 	color:#333;
+ 	background-color: #fff;
+ 	transition-duration: 0.2s;
+ }
+
+ /*-------------- Booking Popup --------------*/
+
+
+ .div-booking-button{
+ 	width:4%;
+ 	height:8%;
+ 	border: 3px solid #fff;
+ 	border-radius: 50%;
+ 	position:fixed;
+ 	bottom: 5%;
+ 	left:3%;
+ 	object-fit: cover;
+ 	object-position: center;
+ 	background-image: url("../images/icon_booking_white.png");
+ 	background-repeat: no-repeat;
+ 	background-position: center;
+ 	box-shadow: 3px 3px 5px #000;
+ 	transition-duration: 0.2s;
+
+ }
+
+ .div-booking-button:hover{
+ 	width:4%;
+ 	height:8%;
+ 	border-radius: 50%;
+ 	background-color: #fff;
+ 	position:fixed;
+ 	bottom: 5%;
+ 	left:3%;
+ 	object-fit: cover;
+ 	object-position: center;
+ 	background-image: url("../images/icon_booking.png");
+ 	background-repeat: no-repeat;
+ 	background-position: center;
+ }
+
+ .div-booking-form{
+ 	width:100%;
+ 	height:100%;
+ 	position:fixed;
+ 	top:0%;
+ 	bottom: 0%;
+ 	z-index: 100;
+ 	background-color: #333333ee;
+ 	color:#fff;
+ 	display:none;
+ }
+
+ .div-booking-card{
+ 	height: 550px;
+ 	margin-top: 5%;
+ 	border:2px solid #fff;
+ 	border-radius: 3px;
+ 	position:relative;
+ 	z-index: 110;
+ }
+
+ .div-booking-card h3{
+ 	margin-bottom: 20px;
+ 	padding:0px 10px;
+ }
+
+ .div-booking-card .div-popup-table{
+ 	height: 210px;
+ 	overflow-y: scroll;
+ }
+
+ .div-booking-card .div-popup-table::-webkit-scrollbar{
+ 	width:12px;
+ }
+
+ .div-booking-card .div-popup-table::-webkit-scrollbar-track{
+ 	background-color: transparent;
+ 	box-shadow: 2px 2px 2px #000;
+ 	border: 2px solid #fff;
+ 	border-radius: 25px;
+ }
+
+ .div-booking-card .div-popup-table::-webkit-scrollbar-thumb{
+ 	background-color: #f8f8f8;
+ 	border-radius: 25px;
+ }
+
+ .div-booking-card #close-button-id{
+ 	text-align: right;
+ 	color: #ddd;
+ 	font-size: 20px;
+ 	padding:0px 10px;
+ 	margin:0px;
+ }
+
+ .div-booking-card p i:hover{
+ 	color: #fff;
+ 	transition-duration: 0.2s;
+ }
+
+ .div-booking-card .row,
+ .div-booking-card .col{
+ 	margin:0px;
+ 	padding:0px;
+ }
+
+ .form-customer,
+ .form-phone,
+ .form-address{
+ 	padding: 0px 10px;
+ }
+
+ .btn-in-booking-card{
+ 	width:90px;
+ 	height: 40px;
+ 	border: 2px solid #fff;
+ 	border-radius: 5px;
+ 	color: #fff;
+ 	font-size: 1.15em;
+ 	font-family: Sriracha;
+ 	background-color: transparent;
+ 	margin: 5px 10px;
+ 	transition-duration: 0.3s;
+ 	float:right;
+ }
+
+ .btn-in-booking-card:hover{
+ 	background-color: #ffffff;
+ 	color: #000;
+ }
+
+
+/*=========================================
+=============== Location Page =============
+=========================================*/
+
+/* --------------- Restaurant Location ------------- */
+
+.div-restaurant-location h3,
+.div-restaurant-location h5,
+.div-restaurant-location p{
+	color: #fff;
+	font-family: Sriracha;
+	padding-top: 10px;
+}
+
+.div-restaurant-location .div-location-img,
+.div-restaurant-location .row{
+	padding:0px;
+	margin:0px;
+}
+
+.div-location-mmp,
+.div-location-ssq,
+.div-location-cm{
+	width:100%;
+	height: 285px;
+	position:relative;
+	overflow: hidden;
+	text-shadow: 4px 4px 3px #000;
+}
+
+.div-location-img{
+	position:relative;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.div-location-img img{
+	position: absolute;
+	transition: 0.2s;
+}
+
+.div-location-point{
+	position: relative;
+	top: 45%;
+	left: 48%;
+	opacity: 0;
+	transition: 0.2s;
+}
+
+.div-location-point span{
+	font-size: 2.5em;
+	color: #fff;
+	border: 4px solid #fff;
+	border-radius: 50%;
+	padding: 5px 15px 5px 15px;
+	text-shadow: none;
+}
+
+.div-location-ssq .div-location-text{
+	text-align: right;
+}
+
+.bg-location-mmp{
+	width:100%;
+	height:inherit;
+	background-image: url('../images/location_myanmar_plaza.jpg');
+	background-position: center;
+	background-size: cover;
+	position:absolute;
+	z-index: 1;
+}
+
+.bg-location-ssq{
+	width:100%;
+	height:inherit;
+	background-image: url('../images/location_sule_square.jpg');
+	background-position: center;
+	background-size: cover;
+	position:absolute;
+	z-index: 1;
+}
+
+.bg-location-cm{
+	width:100%;
+	height:inherit;
+	background-image: url('../images/location_city_mall.jpg');
+	background-position: center;
+	background-size: cover;
+	position:absolute;
+	z-index: 1;
+}
+
+.div-location-dark-layer{
+	width:100%;
+	height: inherit;
+	background-color: #000000aa;
+	position: absolute;
+	z-index: 2;
+}
+
+.div-location-info{
+	position:relative;
+	z-index: 7;
+}
+
+/* ---------------- Location Popup ---------------- */
+
+.div-location-popup{
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0%;
+	bottom: 0%;
+	z-index: 100;
+	background-color: #333333ee;
+	color:#fff;	
+	display: none;
+}
+
+.div-location-popup p{
+	text-align: right;
+	color: #ddd;
+	font-size: 20px;
+	padding:0px 10px;
+	margin-top: 25px;
+}
+
+.div-location-popup p i:hover{
+	color: #fff;
+	transition-duration: 0.2s;
+}
+
+.iframe-location-popup{
+	width: 66%;
+	height: 70%;
+	position:fixed;
+	top:15%;
+	left:15%;
+}
+
+
+ /*===================================
+ ============ About Us Page ==========
+ ===================================*/
+
+ /* ------------ About Us Bars ---------- */
+
+ .div-about-us{
+ 	font-family: Sriracha;
+ 	color:#f8f8f8;
+ 	text-shadow: 4px 4px 5px #000;
+ }
+
+ .div-about-us .row,
+ .div-about-us .col{
+ 	margin:0px;
+ 	padding:0px;
+ }
+
+ .div-about-us-main-bar{
+ 	position:relative;
+ }
+
+ .div-about-us-main-bar h1{
+ 	position:absolute;
+ 	top:50%;
+ 	left:40%;
+ 	z-index: 4;
+ }
+
+ .div-about-us-main-bar span{
+ 	font-size: 30px;
+ 	color:#ffffff99;
+ 	position:absolute;
+ 	top:80%;
+ 	left:48%;
+ 	z-index: 4;
+ 	transition: 0.2s;
+ }
+
+ .div-about-us-main-bar span:hover{
+ 	color:#fff;
+ }
+
+ .div-about-us-main-bar .bg-who-we-are-main-bar{
+ 	width: 100%;
+ 	height: 300px;
+ 	background-image: url("../images/img_aboutus_wwa.jpg");
+ 	background-position: top;
+ 	background-size: cover;
+ 	filter: blur(0px) brightness(50%) drop-shadow(0px 8px 8px #000);
+ 	position:relative;
+ 	z-index:2;
+ }
+
+ .div-about-us-sub-bar .bg-who-we-are-sub-bar{
+ 	width: 100%;
+ 	height: 300px;
+ 	background-image: url("../images/img_aboutus_wwa.jpg");
+ 	background-position: bottom;
+ 	background-size: cover;
+ 	filter: blur(0px) brightness(30%);
+ 	position:absolute;
+ 	z-index:1;
+ }
+
+ .div-about-us-main-bar .bg-our-kitchen-main-bar{
+ 	width: 100%;
+ 	height: 300px;
+ 	background-image: url("../images/img_aboutus_kitchen.jpg");
+ 	background-position: top;
+ 	background-size: cover;
+ 	filter: blur(0px) brightness(50%) drop-shadow(0px 8px 8px #000);
+ 	position:relative;
+ 	z-index:2;
+ }
+
+ .div-about-us-sub-bar .bg-our-kitchen-sub-bar{
+ 	width: 100%;
+ 	height: 514px;
+ 	background-image: url("../images/img_aboutus_kitchen.jpg");
+ 	background-position: bottom;
+ 	background-size: cover;
+ 	filter: blur(0px) brightness(30%);
+ 	position:absolute;
+ 	z-index:1;
+ }
+
+ .div-about-us-main-bar .bg-our-chefs-main-bar{
+ 	width: 100%;
+ 	height: 300px;
+ 	background-image: url("../images/img_aboutus_chefs.jpg");
+ 	background-position: top;
+ 	background-size: cover;
+ 	filter: blur(0px) brightness(50%) drop-shadow(0px 8px 8px #000);
+ 	position:relative;
+ 	z-index:2;
+ }
+
+ .div-about-us-sub-bar .bg-our-chefs-sub-bar{
+ 	width: 100%;
+ 	height: 548px;
+ 	background-image: url("../images/img_aboutus_chefs.jpg");
+ 	background-position: bottom;
+ 	background-size: cover;
+ 	filter: blur(0px) brightness(30%);
+ 	position:absolute;
+ 	z-index:1;
+ }
+
+ .div-about-us-sub-bar{
+ 	position:relative;
+ }
+
+ .div-about-us-sub-bar #div-who-we-are-info h5{
+ 	text-align: center;
+ 	line-height: 1.7em;
+ 	position:relative;
+ 	top: 30%;
+ 	padding: 50px 80px;
+ 	z-index: 3;
+ }
+
+ .div-about-us-sub-bar .div-kitchen-row,
+ .div-about-us-sub-bar .div-chefs-row{
+ 	position:relative;
+ 	z-index:3;
+ }
+
+ .div-about-us-sub-bar .div-kitchen-row .col,
+ .div-about-us-sub-bar .div-chefs-row .col{
+ 	margin:30px;
+ 	text-align: center;
+ 	box-shadow: 4px 4px 4px #000;
+ }
+
+ .div-about-us-sub-bar .div-kitchen-row .col img{
+ 	width:100%;
+ 	height: 250px;
+ 	object-fit: cover;
+ 	border:2px solid #f8f8f8;
+ }
+
+ .div-about-us-sub-bar .div-kitchen-row .col h4,
+ .div-about-us-sub-bar .div-chefs-row .col h4{
+ 	padding-top: 20px;
+ }
+
+ .div-about-us-sub-bar .div-kitchen-row .col p,
+ .div-about-us-sub-bar .div-chefs-row .col p{
+ 	padding: 5px 10px 5px 10px;
+ 	color:#f8f8f8;
+ }
+
+ .div-about-us-sub-bar .div-chefs-row .col img{
+ 	width:100%;
+ 	height:350px;
+ 	object-fit: cover;
+ }
+
+ #wwa-sub-bar-id{
+ 	display: none;
+ }
+
+ #kitchen-sub-bar-id{
+ 	display: none;
+ }
+
+ /*#chefs-sub-bar-id{
+ 	display: none;
+ }*/
